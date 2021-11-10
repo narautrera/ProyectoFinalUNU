@@ -1,1 +1,9 @@
-body {background-color: black;}
+body {background-color: black;
+padding: 2vw;}
+
+.accordion-button {background-color: black;
+border: solid white 0.2vw;
+color: white;}
+.accordion-body {background-color: black;
+color: white;}
+.accordion-item {background-color: black;}
