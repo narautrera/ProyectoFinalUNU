@@ -11,6 +11,156 @@
     <title>UNU diario</title>
   </head>
   <body>
+    <div class="container">
+      <div class="idAcordeon">
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-bs-toggle="collapse" href="#menus" >
+              MENÚS
+            </a>
+          </div>
+          <div id="menus" class="collapse show" data-bs-parent="#idAcordeon">
+            <div class="card-body">
+              <h3>Menú 1</h3>
+              Menú 2
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#pasos">
+              PASOS
+            </a>
+          </div>
+          <div id="pasos" class="collapse" data-parent="#idAcordeon">
+            <div class="card-body">
+              Recibís tu UNU box
+              Calentás o enfriás
+              Emplatás
+              Disfrutás
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#comopedir">
+              CÓMO PEDIR
+            </a>
+          </div>
+          <div id="comopedir" class="collapse" data-parent="#idAcordeon">
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#envios">
+              ENVÍOS
+            </a>
+          </div>
+          <div id="envios" class="collapse" data-parent="#idAcordeon">
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#mediosdepago">
+              MEDIOS DE PAGO
+            </a>
+          </div>
+          <div id="mediosdepago" class="collapse" data-parent="#idAcordeon">
+            <div class="card-body">
+            </div>
+          </div>
+        </div>
+      </div>
 
+
+
+
+<br><br><br>
+
+
+
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          MENÚS
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <!-- poner un grid de bootstrap con cada menú -->
+            <li>entrada</li>
+            <li>plato fuerte</li>
+            <li>postre</li>
+            <li>unu+</li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            PASOS
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <li>Recibís tu UNU box</li>
+            <li>Calentás o enfriás</li>
+            <li>Emplatás</li>
+            <li>Disfrutás</li>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            CÓMO PEDIR
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <li>Elegí el menú que más te guste</li>
+            <li>Nos enviás un mensaje por MD de Instagram o por Whatsapp</li>
+            <li>Completás tus datos</li>
+            <li>Te enviamos los medios de pago</li>
+            <li>Elegís cómo recibirlo</li>
+            <!-- Insertar cartel de atención 48 hs de anticipación -->
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            ENVÍOS
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <li>Forma de retiro</li>
+            <li>Forma de envío</li>
+            <li>Días de entrega</li>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            MEDIOS DE PAGO
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <li>Efectivo</li>
+            <li>Transferencia bancaria</li>
+            <li>Mercado pago (con % de recargo)</li>
+          </div>
+        </div>
+      </div>
   </body>
 </html>

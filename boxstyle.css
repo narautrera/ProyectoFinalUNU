@@ -1,5 +1,6 @@
-body {background-color: black;
+body {background-image: url(imagenes/fondo1.png);
 padding: 2vw;}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap');
 
 .accordion-button {background-color: black;
 border: solid white 0.2vw;
@@ -7,3 +8,26 @@ color: white;}
 .accordion-body {background-color: black;
 color: white;}
 .accordion-item {background-color: black;}
+.titulo {color: white;
+font-family: 'Merriweather Sans', sans-serif;
+letter-spacing: 1.2vw;
+text-align: center;
+background-color: black;
+opacity: 60%;
+border: solid white;}
+.container {color: white;
+font-family: 'Merriweather Sans', sans-serif;
+letter-spacing: 1.2vw;
+text-align: center;
+background-color: black;
+opacity: 60%;
+
+}
+.col {border: solid white;}
+.menus {color: white;
+font-family: 'Merriweather Sans', sans-serif;
+letter-spacing: 0.8vw;
+text-align: left;
+background-color: black;
+opacity: 60%;
+}
