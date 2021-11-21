@@ -12,6 +12,12 @@
   </head>
 
   <body>
+    <header>
+      <img src="imagenes/unubox.png" alt="UNU box">
+      <h3>La manera más rica y fácil de interactuar con tu comida</h3>
+    </header>
+    <br>
+    <!--sacarle el color por default que tiene el acordeon-->
     <div class="accordion" id="box">
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading-1">
@@ -19,91 +25,288 @@
             MENÚS
           </button>
         </h2>
-        <div id="box1" class="accordion-collapse collapse show" area-labelledby="heading-1" data-bs-parent="#box">
+        <div id="box1" class="accordion-collapse collapse" area-labelledby="heading-1" data-bs-parent="#box">
           <div class="accordion-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </p>
+            <div class="container">
+              <div class="row">
+                <div class="col col-lg-6 col-md-6 col-sm-12">
+                  <h3> Menú I </h3>
+                  <br>
+                  <div class="menus">
+                    <h4>ENTRADA</h4>
+                    <li>Sopa de cebolla caramelizada</li>
+                    <li>Corutones</li>
+                    <br><br>
+                    <h4>PLATO FUERTE</h4>
+                    <li>Sorrentinos de manzana y apio asado</li>
+                    <li>Salsa de boniato al coco</li>
+                    <li>Avellanas</li>
+                    <br><br>
+                    <h4>POSTRE</h4>
+                    <li>Guacamole dulce</li>
+                    <li>Ananá a vivo</li>
+                    <li>Praliné de nuez</li>
+                    <br><br>
+                    <h4>UNU +</h4>
+                    <li>Pan de masa madre</li>
+                  </div>
+                </div>
+                <div class="col col-lg-6 col-md-6 col-sm-12 flex">
+                  <h3>Galería Menú I</h3>
+                  <br>
+                  <img src="imagenes/sopa.PNG" alt="foto de sopa">
+                  <img src="imagenes/sorrentinos.PNG" alt="foto de sorrentinos">
+                  <img src="imagenes/guacamole.PNG" alt="foto de guacamole dulce">
+                </div>
+                <div class="col col-lg-6 col-md-6 col-sm-12">
+                  <h3> MENÚ II </h3>
+                  <br>
+                  <div class="menus">
+                    <h4>ENTRADA</h4>
+                    <li>Chorizo casero</li>
+                    <li>Puré de cabutia ahumado</li>
+                    <li>Chimichurri</li>
+                    <br><br>
+                    <h4>PLATO FUERTE</h4>
+                    <li>Vacío braseado a la cerveza</li>
+                    <li>Puré de papas</li>
+                    <li>Demi glace vacuno</li>
+                    <br><br>
+                    <h4>POSTRE</h4>
+                    <li>Creme brulée de vainilla</li>
+                    <li>Granola de frutos secos</li>
+                    <br><br>
+                    <h4>UNU +</h4>
+                    <li>Pan de masa madre</li>
+                  </div>
+                </div>
+                <div class="col col-lg-6 col-md-6 col-sm-12 flex">
+                  <h3>Galería Menú II</h3>
+                  <br>
+                  <img src="imagenes/chorizo.PNG" alt="foto de chorizo casero">
+                  <img src="imagenes/vacio.PNG" alt="foto de vacío braseado">
+                  <img src="imagenes/cremebrulee.PNG" alt="foto de creme brulée con granola">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-2">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#box2" area-expanded="true" area-controls="box2">
+            PASOS
+          </button>
+        </h2>
+        <div id="box2" class="accordion-collapse collapse" area-labelledby="heading-2" data-bs-parent="#box">
+          <div class="accordion-body">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <br><br><br><br><br>
-      <h1 class="titulo">MENÚS</h1>
-      <div class="container">
-        <div class="row">
-          <div class="col col-lg-6 col-md-6 col-sm-12">
-            <h2> MENÚ 1 </h2>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <!--agregar con media query los pasos a seguir cuando se ve en celular o lograr que se vea igual-->
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="imagenes/caja.jpeg" class="d-block w-100" alt="Paso 1">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2>1° Recibís tu UNU box</h2>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="imagenes/calentar.png" class="d-block w-100" alt="Paso 2">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2>2° Calentás o enfriás</h2>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imagenes/emplatar.png" class="d-block w-100" alt="Paso 3">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2>3° Emplatás y...¡a comer!</h2>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-3">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#box3" area-expanded="true" area-controls="box3">
+            CÓMO PEDIR
+          </button>
+        </h2>
+        <div id="box3" class="accordion-collapse collapse" area-labelledby="heading-3" data-bs-parent="#box">
+          <div class="accordion-body">
+            <div class="container">
+              <div class="row">
+                <div class="col col-lg-6 col-md-6 col-sm-12">
+                  <div class="menus">
+                      <li>1° Elegí el menú que más te guste</li>
+                      <br><br>
+                      <li>2° Nos enviás un mensaje por  MD de <a href="https://www.instagram.com/unubox/" target="_blank"> Instagram </a> o por <a href=href="https://wa.me/5491135779383" target="_blank"> Whatsapp </a> </li>
+                      <br><br>
+                      <li>3° Completás tus datos</li>
+                      <br><br>
+                      <li>4° Te enviamos los medios de pago o pagás con Mercado Pago (con recargo del 5%) desde <a href="https://mpago.la/2u7ZYxw">aquí</a> y nos envias el comprobante</li>
+                      <br><br>
+                      <li>5° Elegís cómo recibirlo</li>
+                  </div>
+                </div>
+                <div class="col col-lg-6 col-md-6 col-sm-12">
+                  <img class="gif" src="imagenes/atencion.gif" alt="">
+              </div>
+            </div>
           </div>
-          <div class="col col-lg-6 col-md-6 col-sm-12">
-            <h2> MENÚ 2 </h2>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-4">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#box4" area-expanded="true" area-controls="box4">
+            ENVÍOS
+          </button>
+        </h2>
+        <div id="box4" class="accordion-collapse collapse" area-labelledby="heading-4" data-bs-parent="#box">
+          <div class="accordion-body">
+            <h3 class="envios">FORMA DE RETIRO</h3>
+            <p>Domicilio particular.....................GRATIS</p>
+            <h3 class="envios">FORMA DE ENVÍO</h3>
+            <p>Envío a domicilio.....................COSTO ADICIONAL (ver zonas de entrega)</p>
+            <br><br>
+            <div class="container zonas">
+              <div class="row">
+                <div class="col col-lg-4 col-md-4 col-sm-12">
+                  <p>
+                    <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#boton" aria-expanded="false" aria-controls="collapseWidthExample">
+                      Zona 1
+                    </button>
+                  </p>
+                  <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="boton">
+                      <div class="card card-body" style="width: 300px;">
+                        <li>-Martín Coronado</li>
+                        <li>-Pablo Podestá y Altos de Podestá</li>
+                        <li>-Ciudad Jardín</li>
+                        <li>-Villa Bosch</li>
+                        <li>-Hurligham (hasta 10 cuadras de cercanía a Av. Roca y Bernabé Márquez)</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-4 col-md-4 col-sm-12">
+                  <p>
+                    <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#boton1" aria-expanded="false" aria-controls="collapseWidthExample">
+                      Zona 2
+                    </button>
+                  </p>
+                  <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="boton1">
+                      <div class="card card-body" style="width: 300px;">
+                        <li>-Villa Tesei</li>
+                        <li>-Gaona</li>
+                        <li>-El Palomar</li>
+                        <li>-Caseros</li>
+                        <li>-Santos Lugares</li>
+                        <li>-Villa Libertad</li>
+                        <li>-Billighurst</li>
+                        <li>-Loma Hermosa</li>
+                        <li>-William Morris</li>
+                        <li>-Hurligham (más de 10 cuadras de lejanía de Av. Roca y Bernabé Márquez)</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-4 col-md-4 col-sm-12">
+                  <p>
+                    <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#boton2" aria-expanded="false" aria-controls="collapseWidthExample">
+                      Zona 3
+                    </button>
+                  </p>
+                  <div style="min-height: 120px;">
+                    <div class="collapse collapse-horizontal" id="boton2">
+                      <div class="card card-body" style="width: 300px;">
+                        <li>-Villa Ballester</li>
+                        <li>-José León Suarez</li>
+                        <li>-San Martín</li>
+                        <li>-San Andrés</li>
+                        <li>-Villa Maipú</li>
+                        <li>-Villa Martelli</li>
+                        <li>-Boulogne</li>
+                        <li>-Villa Urquiza</li>
+                        <li>-Villa Devoto</li>
+                        <li>-Villa del Parque</li>
+                        <li>-Villa Real</li>
+                        <li>-Monte Castro</li>
+                        <li>-Versalles</li>
+                        <li>-Villa Luro</li>
+                        <li>-Liniers</li>
+                        <li>-Ciudadela</li>
+                        <li>-Villa Sarmiento</li>
+                        <li>-Ramos Mejía</li>
+                        <li>-Haedo</li>
+                        <li>-Morón</li>
+                        <li>-Castelar</li>
+                        <li>-Ituzaingó</li>
+                        <li>-Parque Leloir</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="envios">DÍAS DE ENTREGA</h3>
+
+            <img src="imagenes/dias.gif" alt="" class="fotodias">
+
+          <!-- centrar imagen de martes y viernes-->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-5">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#box5" area-expanded="true" area-controls="box5">
+            MEDIOS DE PAGO
+          </button>
+        </h2>
+        <div id="box5" class="accordion-collapse collapse" area-labelledby="heading-5" data-bs-parent="#box">
+          <div class="accordion-body">
+            <h3 class="envios">EFECTIVO</h3>
+            <h3 class="envios">TRANSFERENCIA BANCARIA</h3>
+            <h3 class="envios">MERCADO PAGO</h3>
+
           </div>
         </div>
       </div>
       <br>
-      <div class="container">
-        <div class="row">
-          <div class="col col-lg-6 col-md-6 col-sm-12">
-            <div class="menus">
-            <h4>ENTRADA</h4>
-            <li>Sopa de cebolla caramelizada</li>
-            <li>Corutones</li>
-            <h4>PLATO FUERTE</h4>
-            <li>Sorrentinos de manzana y apio asaso</li>
-            <li>Salsa de boniato al coco</li>
-            <li>Avellanas</li>
-            <h4>POSTRE</h4>
-            <li>Guacamole dulce</li>
-            <li>Ananá a vivo</li>
-            <li>Praliné de nuez</li>
-            <h4>UNU +</h4>
-            <li>Pan de masa madre</li>
-            </div>
-          </div>
-          <div class="col col-lg-6 col-md-6 col-sm-12">
-            <div class="menus">
-            <h4>ENTRADA</h4>
-            <li>Chorizo casero</li>
-            <li>Puré de cabutia ahumado</li>
-            <li>Chimichurri</li>
-            <h4>PLATO FUERTE</h4>
-            <li>Vacío braseado a la cerveza</li>
-            <li>Puré de papas</li>
-            <li>Demi glace vacuno</li>
-            <h4>POSTRE</h4>
-            <li>Creme brulée de vainilla</li>
-            <li>Granola de frutos secos</li>
-            <h4>UNU +</h4>
-            <li>Pan de masa madre</li>
-            </div>
-          </div>
+      <footer>
+        <div class="redes">
+          <a class="opacidad" href="https://www.instagram.com/unubox" target="_blank"> <img src="imagenes/instagram.png" alt="" width="50" height=""> </a>
+          @unubox
         </div>
-      </div>
+        <div class="redes">
+          <a class="opacidad" href="https://wa.me/5491135779383" target="_blank">  <img src="imagenes/whatsapp.png" alt="" width="50" height=""> </a>
+          +54 11 35779383
+        </div>
+      </footer>
 
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

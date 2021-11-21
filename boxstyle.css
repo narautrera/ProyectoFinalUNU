@@ -1,33 +1,101 @@
 body {background-image: url(imagenes/fondo1.png);
-padding: 2vw;}
+  font-family: 'Merriweather Sans', sans-serif;
+  padding: 2vw;}
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap');
 
 .accordion-button {background-color: black;
-border: solid white 0.2vw;
-color: white;}
+  border: solid white 0.2vw;
+  color: white;}
 .accordion-body {background-color: black;
-color: white;}
+  color: white;}
 .accordion-item {background-color: black;}
-.titulo {color: white;
-font-family: 'Merriweather Sans', sans-serif;
-letter-spacing: 1.2vw;
-text-align: center;
-background-color: black;
-opacity: 60%;
-border: solid white;}
-.container {color: white;
-font-family: 'Merriweather Sans', sans-serif;
-letter-spacing: 1.2vw;
-text-align: center;
-background-color: black;
-opacity: 60%;
+.accordion-header {color: black;
 
-}
-.col {border: solid white;}
+  text-decoration: none;}
+.accordion-button {color: black;
+  background-color: orange;
+  border: solid black 2vw;
+  margin-bottom: 2vw;}
+.titulo {color: white;
+
+  letter-spacing: 1.2vw;
+  text-align: center;
+  background-color: black;
+  opacity: 60%;}
+.container {color: white;
+
+  letter-spacing: 1.2vw;
+  text-align: center;
+  background-color: black;}
 .menus {color: white;
-font-family: 'Merriweather Sans', sans-serif;
-letter-spacing: 0.8vw;
-text-align: left;
-background-color: black;
-opacity: 60%;
+
+  letter-spacing: 0.8vw;
+  text-align: left;
+  background-color: black;}
+.flex {display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;}
+h1 {text-decoration: underline;
 }
+h2 {background-color: orange;
+color: black;
+letter-spacing: 0.2vw;
+}
+
+header img {margin: auto;
+border: none;
+width: 25vw;
+display: flex;
+justify-content: center;}
+img {width: 15vw;
+  box-sizing: border-box;
+  border: solid orange;
+  border-width: 0.5vw;
+  margin: 0.5vw;}
+h4 {text-align: center;
+  color: orange;
+background-color: black;}
+li {list-style: none;
+  text-align: center;}
+a {text-decoration: none;
+color: orange;}
+footer {
+  font-size: 1rem;
+  letter-spacing: 0.3vw;
+  display: flex;
+  justify-content: space-around;}
+.opacidad:hover {opacity: 40%;}
+footer img {width: 3.5vw;
+  border: none;}
+.redes {color: white;
+  letter-spacing: 0.5vw;}
+.carousel img {width: 50vw;
+  border: none;}
+.carousel {width: 45vw;
+  margin: auto;}
+.gif {width: 38vw;
+  border: dotted orange 0.8vw;
+  margin: auto;}
+.card-body {color: black;
+  text-align: left;
+  background-color: orange;
+
+  font-weight: bolder;
+  font-size: 0.7rem;
+  letter-spacing: 0.2vw;
+  list-style: circle;}
+h3 {background-color: orange;
+  color: white;
+  letter-spacing: 0.8vw;
+  text-align: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+font-size: 1.5rem;
+padding: 0.5vw;}
+p {
+  letter-spacing: 0.5vw;
+  font-size: 1rem;}
+.fotodias {width: 40vw;
+  border: none;
+  margin: auto;}
