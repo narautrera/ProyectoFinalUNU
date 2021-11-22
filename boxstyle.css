@@ -98,4 +98,6 @@ p {
   font-size: 1rem;}
 .fotodias {width: 40vw;
   border: none;
-  margin: auto;}
+  margin: auto;
+  display: flex;
+  justify-content: center;}
