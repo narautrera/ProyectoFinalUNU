@@ -10,199 +10,265 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>UNU diario</title>
   </head>
+
   <body>
-    <div class="container">
-      <div class="idAcordeon">
-        <div class="card">
-          <div class="card-header">
-            <a class="card-link" data-bs-toggle="collapse" href="#menus" >
-              MENÚS
-            </a>
-          </div>
-          <div id="menus" class="collapse show" data-bs-parent="#idAcordeon">
-            <div class="card-body">
-              <h3>Menú 1</h3>
-              Menú 2
+    <header>
+      <img src="imagenes/unudiario-modified.png" alt="UNU diario">
+      <h3>Stockeá tu freezer para toda la semana</h3>
+    </header>
+<!--verificar si la letra del slogan en la web sale como debe salir-->
+
+
+<div class="accordion" id="box">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading-1">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#box1" area-expanded="true" area-controls="box1">
+        MENÚS
+      </button>
+    </h2>
+    <div id="box1" class="accordion-collapse collapse" area-labelledby="heading-1" data-bs-parent="#box">
+      <div class="accordion-body">
+        <div class="container">
+          <div class="row">
+            <div class="col col-lg-6 col-md-6 col-sm-12">
+              <!--cambiar grid-->
+              <h3> Menú</h3>
+              <br>
+              <div class="menus">
+                <!--colocar menú aquí-->
+              </div>
+              <br><br>
+              <p id="precio1" class="precio">PRECIO</p>
+              <button onclick="otrocartel()">Ver</button>
+            </div>
+            <div class="col col-lg-6 col-md-6 col-sm-12 flex">
+              <!--cambiar grid-->
+
+              <h3>Galería</h3>
+              <br>
+              <!--cambiar img-->
+              <img onmouseover= "ampliar(this)" onmouseout="normal(this)" src="" alt="" >
+              <img onmouseover= "ampliar(this)" onmouseout="normal(this)" src="" alt="">
+              <img onmouseover= "ampliar(this)" onmouseout="normal(this)" src="" alt="" >
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header">
-            <a class="card-link" data-toggle="collapse" href="#pasos">
-              PASOS
-            </a>
-          </div>
-          <div id="pasos" class="collapse" data-parent="#idAcordeon">
-            <div class="card-body">
-              Recibís tu UNU box
-              Calentás o enfriás
-              Emplatás
-              Disfrutás
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <a class="card-link" data-toggle="collapse" href="#comopedir">
-              CÓMO PEDIR
-            </a>
-          </div>
-          <div id="comopedir" class="collapse" data-parent="#idAcordeon">
-            <div class="card-body">
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <a class="card-link" data-toggle="collapse" href="#envios">
-              ENVÍOS
-            </a>
-          </div>
-          <div id="envios" class="collapse" data-parent="#idAcordeon">
-            <div class="card-body">
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <a class="card-link" data-toggle="collapse" href="#mediosdepago">
-              MEDIOS DE PAGO
-            </a>
-          </div>
-          <div id="mediosdepago" class="collapse" data-parent="#idAcordeon">
-            <div class="card-body">
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-<br><br><br>
-
-
-
-
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          MENÚS
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <!-- poner un grid de bootstrap con cada menú -->
-            <li>entrada</li>
-            <li>plato fuerte</li>
-            <li>postre</li>
-            <li>unu+</li>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            PASOS
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <li>Recibís tu UNU box</li>
-            <li>Calentás o enfriás</li>
-            <li>Emplatás</li>
-            <li>Disfrutás</li>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            CÓMO PEDIR
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <li>Elegí el menú que más te guste</li>
-            <li>Nos enviás un mensaje por MD de Instagram o por Whatsapp</li>
-            <li>Completás tus datos</li>
-            <li>Te enviamos los medios de pago</li>
-            <li>Elegís cómo recibirlo</li>
-            <!-- Insertar cartel de atención 48 hs de anticipación -->
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            ENVÍOS
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <li>Forma de retiro</li>
-            <li>Forma de envío</li>
-            <li>Días de entrega</li>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFive">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            MEDIOS DE PAGO
-          </button>
-        </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <li>Efectivo</li>
-            <li>Transferencia bancaria</li>
-            <li>Mercado pago (con % de recargo)</li>
-          </div>
-        </div>
-      </div>
-
-
-
-<!--prueba botón-->
-
-
-<!--prueba botón-->
-
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-  </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="container">
-  <div class="row">
-    <div class="col col-lg-12 col-md-12 col-sm-12">
-      <div class="menus">
-        <li>Elegí el menú que más te guste</li>
-        <br><br>
-        <li>Nos enviás un mensaje por MD de Instagram o por Whatsapp</li>
-        <br><br>
-        <li>Completás tus datos</li>
-        <br><br>
-        <li>Te enviamos los medios de pago</li>
-        <br><br>
-        <li>Elegís cómo recibirlo</li>
       </div>
     </div>
   </div>
 </div>
+
+<!--Ver si la galería la dejo con evento onmouseover o dentro de un carousel-->
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading-2">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#box2" area-expanded="true" area-controls="box2">
+        PASOS
+      </button>
+    </h2>
+    <div id="box2" class="accordion-collapse collapse" area-labelledby="heading-2" data-bs-parent="#box">
+      <div class="accordion-body">
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <!--agregar con media query los pasos a seguir cuando se ve en celular o lograr que se vea igual-->
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="imagenes/caja.jpeg" class="d-block w-100" alt="Paso 1">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>1° Recibís tu UNU box</h2>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="imagenes/calentar.png" class="d-block w-100" alt="Paso 2">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>2° Calentás o enfriás</h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/emplatar.png" class="d-block w-100" alt="Paso 3">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>3° Emplatás y...¡a comer!</h2>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading-3">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#box3" area-expanded="true" area-controls="box3">
+        CÓMO PEDIR
+      </button>
+    </h2>
+    <div id="box3" class="accordion-collapse collapse" area-labelledby="heading-3" data-bs-parent="#box">
+      <div class="accordion-body">
+        <div class="container">
+          <div class="row">
+            <div class="col col-lg-6 col-md-6 col-sm-12">
+              <div class="menus">
+                <!--ver los pasos para pedir-->
+                  <li>1° Elegí el menú que más te guste</li>
+                  <br><br>
+                  <li>2° Nos enviás un mensaje por  MD de <a href="https://www.instagram.com/unubox/" target="_blank"> Instagram </a> o por <a href=href="https://wa.me/5491135779383" target="_blank"> Whatsapp </a> </li>
+                  <br><br>
+                  <li>3° Completás tus datos</li>
+                  <br><br>
+                  <li>4° Te enviamos los medios de pago o pagás con Mercado Pago (con recargo del 5%) desde <a href="https://mpago.la/2u7ZYxw">aquí</a> y nos envias el comprobante</li>
+                  <br><br>
+                  <!--cambiar link de pago mio por uno de Uzi-->
+                  <li>5° Elegís cómo recibirlo</li>
+              </div>
+            </div>
+            <div class="col col-lg-6 col-md-6 col-sm-12">
+              <img class="gif" src="imagenes/atencion.gif" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading-4">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#box4" area-expanded="true" area-controls="box4">
+        ENVÍOS
+      </button>
+    </h2>
+    <div id="box4" class="accordion-collapse collapse" area-labelledby="heading-4" data-bs-parent="#box">
+      <div class="accordion-body">
+        <h3 class="envios">FORMA DE RETIRO</h3>
+        <p>Domicilio particular.....................GRATIS</p>
+        <h3 class="envios">FORMA DE ENVÍO</h3>
+        <p>Envío a domicilio.....................COSTO ADICIONAL (ver zonas de entrega)</p>
+        <br><br>
+
+        <!--costos y formas de envio son iguales que en unu box?-->
+
+        <div class="container zonas">
+          <div class="row">
+            <div class="col col-lg-4 col-md-4 col-sm-12">
+              <p>
+                <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#boton" aria-expanded="false" aria-controls="collapseWidthExample">
+                  Zona 1
+                </button>
+              </p>
+              <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="boton">
+                  <div class="card card-body" style="width: 300px;">
+                    <li>-Martín Coronado</li>
+                    <li>-Pablo Podestá y Altos de Podestá</li>
+                    <li>-Ciudad Jardín</li>
+                    <li>-Villa Bosch</li>
+                    <li>-Hurligham (hasta 10 cuadras de cercanía a Av. Roca y Bernabé Márquez)</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-12">
+              <p>
+                <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#boton1" aria-expanded="false" aria-controls="collapseWidthExample">
+                  Zona 2
+                </button>
+              </p>
+              <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="boton1">
+                  <div class="card card-body" style="width: 300px;">
+                    <li>-Villa Tesei</li>
+                    <li>-Gaona</li>
+                    <li>-El Palomar</li>
+                    <li>-Caseros</li>
+                    <li>-Santos Lugares</li>
+                    <li>-Villa Libertad</li>
+                    <li>-Billighurst</li>
+                    <li>-Loma Hermosa</li>
+                    <li>-William Morris</li>
+                    <li>-Hurligham (más de 10 cuadras de lejanía de Av. Roca y Bernabé Márquez)</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-12">
+              <p>
+                <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#boton2" aria-expanded="false" aria-controls="collapseWidthExample">
+                  Zona 3
+                </button>
+              </p>
+              <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="boton2">
+                  <div class="card card-body" style="width: 300px;">
+                    <li>-Villa Ballester</li>
+                    <li>-José León Suarez</li>
+                    <li>-San Martín</li>
+                    <li>-San Andrés</li>
+                    <li>-Villa Maipú</li>
+                    <li>-Villa Martelli</li>
+                    <li>-Boulogne</li>
+                    <li>-Villa Urquiza</li>
+                    <li>-Villa Devoto</li>
+                    <li>-Villa del Parque</li>
+                    <li>-Villa Real</li>
+                    <li>-Monte Castro</li>
+                    <li>-Versalles</li>
+                    <li>-Villa Luro</li>
+                    <li>-Liniers</li>
+                    <li>-Ciudadela</li>
+                    <li>-Villa Sarmiento</li>
+                    <li>-Ramos Mejía</li>
+                    <li>-Haedo</li>
+                    <li>-Morón</li>
+                    <li>-Castelar</li>
+                    <li>-Ituzaingó</li>
+                    <li>-Parque Leloir</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="envios">DÍAS DE ENTREGA</h3>
+
+        <!--los días de entrega son los mismos que en unu box?-->
+
+        <img src="imagenes/dias.gif" alt="" class="fotodias">
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading-5">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#box5" area-expanded="true" area-controls="box5">
+        MEDIOS DE PAGO
+      </button>
+    </h2>
+    <div id="box5" class="accordion-collapse collapse" area-labelledby="heading-5" data-bs-parent="#box">
+      <div class="accordion-body">
+        <h3 class="envios">EFECTIVO</h3>
+        <h3 class="envios">TRANSFERENCIA BANCARIA</h3>
+        <h3 class="envios">MERCADO PAGO</h3>
+
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="js/box.js"> </script>
+
+
+
+  </body>
+</html>

@@ -30,15 +30,15 @@
             <div class="container">
               <div class="row">
                 <div class="col col-lg-6 col-md-6 col-sm-12">
-                  <h3> Menú I </h3>
+                  <h3> Menú I* </h3>
                   <br>
                   <div class="menus">
                     <h4>ENTRADA</h4>
                     <li>Sopa de cebolla caramelizada</li>
-                    <li>Corutones</li>
+                    <li>Croutones</li>
                     <br><br>
                     <h4>PLATO FUERTE</h4>
-                    <li>Sorrentinos de manzana y apio asado</li>
+                    <li>Sorrentinos de manzana y ajo asado</li>
                     <li>Salsa de boniato al coco</li>
                     <li>Avellanas</li>
                     <br><br>
@@ -50,16 +50,21 @@
                     <h4>UNU +</h4>
                     <li>Pan de masa madre</li>
                   </div>
+                  <img src="imagenes/veganbn.png" alt="" class="vegan">
+                  <p class="alergenos">*contiene maní, catañas, avellanas, almendras y nueces</p>
+                  <br><br>
+                  <p id="precio1" class="precio">PRECIO</p>
+                  <button onclick="otrocartel()">Ver</button>
                 </div>
                 <div class="col col-lg-6 col-md-6 col-sm-12 flex">
                   <h3>Galería Menú I</h3>
                   <br>
-                  <img src="imagenes/sopa.png" alt="foto de sopa">
-                  <img src="imagenes/sorrentinos.png" alt="foto de sorrentinos">
-                  <img src="imagenes/guacamole.png" alt="foto de guacamole dulce">
+                  <img onmouseover= "ampliar(this)" onmouseout="normal(this)" src="imagenes/sopa.png" alt="foto de sopa" >
+                  <img onmouseover= "ampliar(this)" onmouseout="normal(this)" src="imagenes/sorrentinos.png" alt="foto de sorrentinos">
+                  <img onmouseover= "ampliar(this)" onmouseout="normal(this)" src="imagenes/guacamole.png" alt="foto de guacamole dulce" >
                 </div>
                 <div class="col col-lg-6 col-md-6 col-sm-12">
-                  <h3> MENÚ II </h3>
+                  <h3> MENÚ II* </h3>
                   <br>
                   <div class="menus">
                     <h4>ENTRADA</h4>
@@ -79,13 +84,18 @@
                     <h4>UNU +</h4>
                     <li>Pan de masa madre</li>
                   </div>
+                  <br>
+                  <p class="alergenos">*contiene maní, catañas, avellanas, almendras y nueces</p>
+                  <br><br>
+                  <p id="precio2" class="precio">PRECIO</p>
+                  <button onclick="cartel()">Ver</button>
                 </div>
                 <div class="col col-lg-6 col-md-6 col-sm-12 flex">
                   <h3>Galería Menú II</h3>
                   <br>
-                  <img src="imagenes/chorizo.PNG" alt="foto de chorizo casero">
-                  <img src="imagenes/vacio.PNG" alt="foto de vacío braseado">
-                  <img src="imagenes/cremebrulee.PNG" alt="foto de creme brulée con granola">
+                  <img onmouseover= "ampliar(this)" onmouseout="normal(this)" src="imagenes/chorizo.PNG" alt="foto de chorizo casero">
+                  <img onmouseover= "ampliar(this)" onmouseout="normal(this)" src="imagenes/vacio.PNG" alt="foto de vacío braseado">
+                  <img onmouseover= "ampliar(this)" onmouseout="normal(this)" src="imagenes/cremebrulee.PNG" alt="foto de creme brulée con granola">
                 </div>
               </div>
             </div>
@@ -155,11 +165,11 @@
                   <div class="menus">
                       <li>1° Elegí el menú que más te guste</li>
                       <br><br>
-                      <li>2° Nos enviás un mensaje por  MD de <a href="https://www.instagram.com/unubox/" target="_blank"> Instagram </a> o por <a href=href="https://wa.me/5491135779383" target="_blank"> Whatsapp </a> </li>
+                      <li>2° Nos enviás un mensaje por MD de <a href="https://www.instagram.com/unubox/" target="_blank"> Instagram </a> o por <a href=href="https://wa.me/5491135779383" target="_blank"> Whatsapp </a> </li>
                       <br><br>
                       <li>3° Completás tus datos</li>
                       <br><br>
-                      <li>4° Te enviamos los medios de pago o pagás con Mercado Pago (con recargo del 5%) desde <a href="https://mpago.la/2u7ZYxw">aquí</a> y nos envias el comprobante</li>
+                      <li>4° Te enviamos los medios de pago o pagás con Mercado Pago (con recargo del 5%) desde <a href="https://mpago.la/1q4tA7i" target="_blank">aquí</a> y nos envias el comprobante</li>
                       <br><br>
                       <li>5° Elegís cómo recibirlo</li>
                   </div>
@@ -180,7 +190,16 @@
         <div id="box4" class="accordion-collapse collapse" area-labelledby="heading-4" data-bs-parent="#box">
           <div class="accordion-body">
             <h3 class="envios">FORMA DE RETIRO</h3>
-            <p>Domicilio particular.....................GRATIS</p>
+            <div class="container">
+              <div class="row">
+                <div class="col col-lg-6 col-md-6 col-sm-12">
+                  <p class="izq">Domicilio particular................GRATIS</p>
+                </div>
+                <div class="col col-lg-6 col-md-6 col-sm-12">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.684518977188!2d-58.6044124848143!3d-34.58684838046386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb90999fe4137%3A0x93e7a09e6508ec7a!2sDCR%2C%20Jos%C3%A9%20Ortega%20y%20Gasset%202342%2C%20B1683%20Mart%C3%ADn%20Coronado%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1637619141372!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+              </div>
+            </div>
             <h3 class="envios">FORMA DE ENVÍO</h3>
             <p>Envío a domicilio.....................COSTO ADICIONAL (ver zonas de entrega)</p>
             <br><br>
@@ -199,7 +218,7 @@
                         <li>-Pablo Podestá y Altos de Podestá</li>
                         <li>-Ciudad Jardín</li>
                         <li>-Villa Bosch</li>
-                        <li>-Hurligham (hasta 10 cuadras de cercanía a Av. Roca y Bernabé Márquez)</li>
+                        <li>-Hurlingham (hasta 10 cuadras de cercanía a Av. Roca y Bernabé Márquez)</li>
                       </div>
                     </div>
                   </div>
@@ -269,9 +288,6 @@
             <h3 class="envios">DÍAS DE ENTREGA</h3>
 
             <img src="imagenes/dias.gif" alt="" class="fotodias">
-
-          <!-- centrar imagen de martes y viernes-->
-
           </div>
         </div>
       </div>
@@ -308,5 +324,6 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="js/box.js"> </script>
   </body>
 </html>

@@ -1,1 +1,13 @@
-body {background-color: white;}
+body {background-image: url(imagenes/fondo1.png);
+padding: 2vw;}
+@import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce&display=swap');
+h3 {font-family: 'Birthstone Bounce', cursive;
+  color: white;
+  background-color: orange;
+  text-align: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;}
+  header img {margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 25vw;}
