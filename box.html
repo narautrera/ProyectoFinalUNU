@@ -14,10 +14,10 @@
   <body>
     <header>
       <img src="imagenes/unubox.png" alt="UNU box">
-      <h3>La manera más rica y fácil de interactuar con tu comida</h3>
+      <h3 class="slogan">La manera más rica y fácil de interactuar con tu comida</h3>
     </header>
     <br>
-    <!--sacarle el color por default que tiene el acordeon-->
+    <!--se podrá sacar el color por default que tiene el acordeon cuando no se activó?-->
     <div class="accordion" id="box">
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading-1">
@@ -29,7 +29,7 @@
           <div class="accordion-body">
             <div class="container">
               <div class="row">
-                <div class="col col-lg-6 col-md-6 col-sm-12">
+                <div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                   <h3> Menú I* </h3>
                   <br>
                   <div class="menus">
@@ -56,14 +56,18 @@
                   <p id="precio1" class="precio">PRECIO</p>
                   <button onclick="otrocartel()">Ver</button>
                 </div>
-                <div class="col col-lg-6 col-md-6 col-sm-12 flex">
+                <div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <h3>Galería Menú I</h3>
                   <br>
-                  <img onmouseover= "ampliar(this)" onmouseout="normal(this)" src="imagenes/sopa.png" alt="foto de sopa" >
-                  <img onmouseover= "ampliar(this)" onmouseout="normal(this)" src="imagenes/sorrentinos.png" alt="foto de sorrentinos">
-                  <img onmouseover= "ampliar(this)" onmouseout="normal(this)" src="imagenes/guacamole.png" alt="foto de guacamole dulce" >
+                  <div class="flex">
+                  <img src="imagenes/sopa.png" alt="foto de sopa" >
+                  <img src="imagenes/sorrentinos.png" alt="foto de sorrentinos">
+                  <img src="imagenes/guacamole.png" alt="foto de guacamole dulce" >
+                  </div>
                 </div>
-                <div class="col col-lg-6 col-md-6 col-sm-12">
+              </div>
+              <div class="row">
+                <div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                   <h3> MENÚ II* </h3>
                   <br>
                   <div class="menus">
@@ -90,20 +94,20 @@
                   <p id="precio2" class="precio">PRECIO</p>
                   <button onclick="cartel()">Ver</button>
                 </div>
-                <div class="col col-lg-6 col-md-6 col-sm-12 flex">
+                <div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12">
                   <h3>Galería Menú II</h3>
                   <br>
-                  <img onmouseover= "ampliar(this)" onmouseout="normal(this)" src="imagenes/chorizo.PNG" alt="foto de chorizo casero">
-                  <img onmouseover= "ampliar(this)" onmouseout="normal(this)" src="imagenes/vacio.PNG" alt="foto de vacío braseado">
-                  <img onmouseover= "ampliar(this)" onmouseout="normal(this)" src="imagenes/cremebrulee.PNG" alt="foto de creme brulée con granola">
+                  <div class="flex">
+                  <img src="imagenes/chorizo.PNG" alt="foto de chorizo casero">
+                  <img src="imagenes/vacio.PNG" alt="foto de vacío braseado">
+                  <img src="imagenes/cremebrulee.PNG" alt="foto de creme brulée con granola">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading-2">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#box2" area-expanded="true" area-controls="box2">
@@ -112,7 +116,11 @@
         </h2>
         <div id="box2" class="accordion-collapse collapse" area-labelledby="heading-2" data-bs-parent="#box">
           <div class="accordion-body">
-
+            <main>
+              <li>1° Recibís tu UNU box</li>
+              <li>2° Calentás o enfriás</li>
+              <li>3° Emplatás y ...¡a comer!</li>
+            </main>
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -149,6 +157,7 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
+          </div>
         </div>
       </div>
       <div class="accordion-item">
@@ -163,19 +172,20 @@
               <div class="row">
                 <div class="col col-lg-6 col-md-6 col-sm-12">
                   <div class="menus">
-                      <li>1° Elegí el menú que más te guste</li>
-                      <br><br>
-                      <li>2° Nos enviás un mensaje por MD de <a href="https://www.instagram.com/unubox/" target="_blank"> Instagram </a> o por <a href=href="https://wa.me/5491135779383" target="_blank"> Whatsapp </a> </li>
-                      <br><br>
-                      <li>3° Completás tus datos</li>
-                      <br><br>
-                      <li>4° Te enviamos los medios de pago o pagás con Mercado Pago (con recargo del 10%) desde <a href="https://mpago.la/1q4tA7i" target="_blank">aquí</a> y nos envias el comprobante</li>
-                      <br><br>
-                      <li>5° Elegís cómo recibirlo</li>
+                    <li>1° Elegí el menú que más te guste</li>
+                    <br><br>
+                    <li>2° Nos enviás un mensaje por MD de <a href="https://www.instagram.com/unubox/" target="_blank"> Instagram </a> o por <a href=href="https://wa.me/5491135779383" target="_blank"> Whatsapp </a> </li>
+                    <br><br>
+                    <li>3° Completás tus datos</li>
+                    <br><br>
+                    <li>4° Te enviamos los medios de pago o pagás con Mercado Pago (con recargo del 10%) desde <a href="https://mpago.la/1q4tA7i" target="_blank">aquí</a> y nos envias el comprobante</li>
+                    <br><br>
+                    <li>5° Elegís cómo recibirlo</li>
                   </div>
                 </div>
                 <div class="col col-lg-6 col-md-6 col-sm-12">
                   <img class="gif" src="imagenes/atencion.gif" alt="">
+                </div>
               </div>
             </div>
           </div>
@@ -283,6 +293,7 @@
                   </div>
                 </div>
               </div>
+              <p>Otras zonas, consultar costos</p>
             </div>
 
             <h3 class="envios">DÍAS DE ENTREGA</h3>
@@ -291,7 +302,6 @@
           </div>
         </div>
       </div>
-
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading-5">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#box5" area-expanded="true" area-controls="box5">
@@ -303,18 +313,20 @@
             <h3 class="envios">EFECTIVO</h3>
             <h3 class="envios">TRANSFERENCIA BANCARIA</h3>
             <h3 class="envios">MERCADO PAGO</h3>
-
           </div>
         </div>
       </div>
+    </div>
+
       <br>
+
       <footer>
         <div class="redes">
           <a class="opacidad" href="https://www.instagram.com/unubox" target="_blank"> <img src="imagenes/instagram.png" alt="" width="50" height=""> </a>
           @unubox
         </div>
         <div class="redes">
-          <a class="opacidad" href="https://wa.me/5491135779383" target="_blank">  <img src="imagenes/whatsapp.png" alt="" width="50" height=""> </a>
+          <a class="opacidad" href="https://wa.link/7u6ti0" target="_blank">  <img src="imagenes/whatsapp.png" alt="" width="50" height=""> </a>
           +54 11 35779383
         </div>
       </footer>
