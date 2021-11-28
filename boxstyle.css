@@ -2,12 +2,12 @@ body {background-image: url(imagenes/fondo1.png);
   font-family: 'Merriweather Sans', sans-serif;
   padding: 2vw;}
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap');
-.slogan {opacity: 80%;}
+.slogan {background-color: black;}
 .accordion-item {background-color: black;}
 .accordion-header {color: black;
   text-decoration: none;}
 .accordion-button {color: black;
-  background-color: #FFCA28;
+  background-color: white;
   border: solid black 2vw;
   margin-bottom: 2vw;}
 
@@ -103,8 +103,6 @@ h3 {background-color: orange;
   margin-bottom: 2vw;
   font-size: 1.5rem;
   padding: 0.5vw;}
-.slogan2 {opacity: 80%;
-  font-family: 'Birthstone Bounce', cursive;}
 p {letter-spacing: 0.5vw;
   font-size: 1rem;}
 .fotodias {width: 25vw;

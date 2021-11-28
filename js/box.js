@@ -5,9 +5,6 @@ function otrocartel() {
 function cartel() {
   document.getElementById ("precio2").innerHTML = "$1900";
 }
-function otrocartel() {
+function otrocartel2() {
   document.getElementById ("precio3").innerHTML = "$3900";
-}
-function cartel() {
-  document.getElementById ("precio4").innerHTML = "$3900";
 }

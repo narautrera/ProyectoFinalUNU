@@ -16,9 +16,6 @@
       <img src="imagenes/unudiario-modified.png" alt="UNU diario">
       <h3 class="slogan">Stockeá tu freezer para toda la semana</h3>
     </header>
-<!--verificar si la letra del slogan en la web sale como debe salir-->
-
-
 <div class="accordion" id="box">
   <div class="accordion-item">
     <h2 class="accordion-header" id="heading-1">
@@ -30,73 +27,65 @@
       <div class="accordion-body">
         <div class="container">
           <div class="row">
-            <div class="col col-lg-6 col-md-6 col-sm-12">
-              <!--cambiar grid-->
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <h3> Menú Clásico</h3>
               <br>
               <div class="menus">
-                <!--colocar menú aquí-->
-              </div>
-              <br><br>
-              <p id="precio3" class="precio">PRECIO</p>
-              <button onclick="cartel()">Ver</button>
-            </div>
-            <div class="col col-lg-6 col-md-6 col-sm-12">
-              <!--cambiar grid-->
-
-              <h3>Galería</h3>
-              <br>
-              <!--cambiar img-->
-              <div class="flex">
-                <img src="" alt="" >
-                <img src="" alt="">
-                <img src="" alt="" >
+                <li>~Carré de cerdo braseado con batatas rústicas</li>
+                <br>
+                <li>~Filet con puré de zanahoria</li>
+                <br>
+                <li>~Pollo a la mostaza y miel con papas españolas</li>
+                <br>
+                <li>~Canelones de espinaca y ricota con salsa portuguesa y queso gratín</li>
+                <br>
+                <li>~Guiso de lentejas con chorizo colorado</li>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col col-lg-6 col-md-6 col-sm-12">
-              <!--cambiar grid-->
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <h3> Menú Vegetariano</h3>
               <br>
               <div class="menus">
-                <!--colocar menú aquí-->
+                <li>~Lasagna de berenjenas</li>
+                <br>
+                <li>~Albóndigas de lentejas con puré de zanahoria</li>
+                <br>
+                <li>~Canelones de espinaca y ricota con salsa portuguesa y queso gratín</li>
+                <br>
+                <li>~Medallones de arveja y arroz con salteado de vegetales</li>
+                <br>
+                <li>~Gratín de brócoli con salsa bechamel</li>
               </div>
+            </div>
+          </div>
+          <br><br>
+              <p id="precio3" class="precio">PRECIO</p>
+              <button onclick="otrocartel2()">Ver</button>
               <br><br>
-              <p id="precio4" class="precio">PRECIO</p>
-              <button onclick="otrocartel()">Ver</button>
-            </div>
-            <div class="col col-lg-6 col-md-6 col-sm-12">
-              <!--cambiar grid-->
-
-              <h3>Galería</h3>
-              <br>
-              <!--cambiar img-->
-              <div class="flex">
-                <img src="" alt="" >
-                <img src="" alt="">
-                <img src="" alt="" >
+              <div class="row">
+                <h3>Galería</h3>
+                <div class="col">
+                  <div class="flex">
+                    <img src="imagenes/vianda1.png" alt="" >
+                    <img src="imagenes/vianda2.png" alt="">
+                  </div>
+                </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-<!--Ver si la galería la dejo con hover o dentro de un carousel-->
-
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="heading-3">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading-3">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#box3" area-expanded="true" area-controls="box3">
         CÓMO PEDIR
       </button>
-    </h2>
+      </h2>
     <div id="box3" class="accordion-collapse collapse" area-labelledby="heading-3" data-bs-parent="#box">
       <div class="accordion-body">
         <div class="container">
           <div class="row">
-            <div class="col col-lg-6 col-md-6 col-sm-12">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <div class="menus">
                 <!--ver los pasos para pedir-->
                   <li>1° Elegí el menú que más te guste</li>
@@ -105,13 +94,13 @@
                   <br><br>
                   <li>3° Completás tus datos</li>
                   <br><br>
-                  <li>4° Te enviamos los medios de pago o pagás con Mercado Pago (con recargo del 10%) desde <a href="https://mpago.la/2u7ZYxw">aquí</a> y nos envias el comprobante</li>
+                  <li>4° Te enviamos los medios de pago o pagás con Mercado Pago (con recargo del 10%) desde <a href="https://mpago.la/2ZvXdaG">aquí</a> y nos envias el comprobante</li>
                   <br><br>
-                  <!--cambiar link de pago mio por uno de Uzi-->
                   <li>5° Elegís cómo recibirlo</li>
               </div>
             </div>
-            <div class="col col-lg-6 col-md-6 col-sm-12">
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <img class="gif" src="imagenes/atencion.gif" alt="">
             </div>
         </div>
@@ -133,12 +122,9 @@
         <h3 class="envios">FORMA DE ENVÍO</h3>
         <p>Envío a domicilio.....................COSTO ADICIONAL (ver zonas de entrega)</p>
         <br><br>
-
-        <!--costos y formas de envio son iguales que en unu box?-->
-
         <div class="container zonas">
           <div class="row">
-            <div class="col col-lg-4 col-md-4 col-sm-12">
+            <div class="col-lg-4 col-md-4 col-sm-12">
               <p>
                 <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#boton" aria-expanded="false" aria-controls="collapseWidthExample">
                   Zona 1
@@ -152,11 +138,13 @@
                     <li>-Ciudad Jardín</li>
                     <li>-Villa Bosch</li>
                     <li>-Hurligham (hasta 10 cuadras de cercanía a Av. Roca y Bernabé Márquez)</li>
+                    <br>
+                    <h3>$280</h3>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col col-lg-4 col-md-4 col-sm-12">
+            <div class="col-lg-4 col-md-4 col-sm-12">
               <p>
                 <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#boton1" aria-expanded="false" aria-controls="collapseWidthExample">
                   Zona 2
@@ -175,11 +163,13 @@
                     <li>-Loma Hermosa</li>
                     <li>-William Morris</li>
                     <li>-Hurligham (más de 10 cuadras de lejanía de Av. Roca y Bernabé Márquez)</li>
+                    <br>
+                    <h3>$380</h3>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col col-lg-4 col-md-4 col-sm-12">
+            <div class="col-lg-4 col-md-4 col-sm-12">
               <p>
                 <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#boton2" aria-expanded="false" aria-controls="collapseWidthExample">
                   Zona 3
@@ -211,18 +201,16 @@
                     <li>-Castelar</li>
                     <li>-Ituzaingó</li>
                     <li>-Parque Leloir</li>
+                    <br>
+                    <h3>$500</h3>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         <h3 class="envios">DÍAS DE ENTREGA</h3>
-
-        <!--cambiar GIF de días de entrega por sólo viernes-->
-
-        <img src="" alt="" class="fotodias">
+        <img src="imagenes/entrega.gif" alt="" class="fotodias">
       </div>
     </div>
   </div>
@@ -238,7 +226,6 @@
         <h3 class="envios">EFECTIVO</h3>
         <h3 class="envios">TRANSFERENCIA BANCARIA</h3>
         <h3 class="envios">MERCADO PAGO</h3>
-
       </div>
     </div>
   </div>
@@ -259,8 +246,5 @@
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
       <script src="js/box.js"> </script>
-
-
-
   </body>
 </html>
